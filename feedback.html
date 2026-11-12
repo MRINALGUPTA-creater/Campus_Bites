@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback | Campus Bites</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+    <div id="header">
+        <h1 class="logo">Campus<span>Bites.</span></h1>
+        <ul id="nav-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="docs/menu.pdf" target="_blank">Our Menu</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="feedback.html" class="active">Feedback</a></li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+
+    <div id="feedback">
+        <div class="section-heading">
+            <p class="tagline">WE VALUE YOUR OPINION</p>
+            <h2>Share Your Feedback</h2>
+            <p>Help us make your college canteen even better.</p>
+        </div>
+
+        <div class="feedback-form">
+            <form action="feedback.html" method="get">
+                <p><label for="name">Full Name</label><br>
+                <input type="text" id="name" name="name" size="40" class="text-box wide"></p>
+
+                <p><label for="email">Email Address</label><br>
+                <input type="text" id="email" name="email" size="40" class="text-box wide"></p>
+
+                <p class="group-title">How would you rate our food?</p>
+                <p>
+                <label class="inline"><input type="radio" name="rating" value="5"> 5 - Excellent</label>
+                <label class="inline"><input type="radio" name="rating" value="4"> 4 - Very Good</label>
+                <label class="inline"><input type="radio" name="rating" value="3"> 3 - Good</label>
+                <label class="inline"><input type="radio" name="rating" value="2"> 2 - Fair</label>
+                <label class="inline"><input type="radio" name="rating" value="1"> 1 - Needs Improvement</label>
+                </p>
+
+                <p class="group-title">What did you like?</p>
+                <p>
+                <label class="inline"><input type="checkbox" name="liked" value="Taste"> Taste</label>
+                <label class="inline"><input type="checkbox" name="liked" value="Price"> Price</label>
+                <label class="inline"><input type="checkbox" name="liked" value="Service"> Service</label>
+                <label class="inline"><input type="checkbox" name="liked" value="Cleanliness"> Cleanliness</label>
+                </p>
+
+                <p><label for="favorite" class="group-title">Your Favourite Category</label><br>
+                <select id="favorite" name="favorite" class="text-box">
+                    <option value="">Choose a category</option>
+                    <option value="Fast Food &amp; Italian">Fast Food &amp; Italian</option>
+                    <option value="Snacks &amp; Quick Bites">Snacks &amp; Quick Bites</option>
+                    <option value="Beverages &amp; Shakes">Beverages &amp; Shakes</option>
+                </select></p>
+
+                <p><label for="message" class="group-title">Your Suggestions</label><br>
+                <textarea id="message" name="message" rows="5" cols="50" class="text-box wide"></textarea></p>
+
+                <input type="submit" value="Submit Feedback" class="submit-btn">
+                <input type="reset" value="Reset" class="reset-btn">
+            </form>
+        </div>
+    </div>
+
+    <div id="footer">
+        <h2>Campus<span>Bites.</span></h2>
+        <p>Made with love for college foodies &hearts;</p>
+    </div>
+
+</body>
+</html>
