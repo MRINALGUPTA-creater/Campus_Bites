@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Veg Sandwich | Campus Bites</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+
+    <div id="header">
+        <h1 class="logo">Campus<span>Bites.</span></h1>
+        <ul id="nav-links">
+            <li><a href="../index.html#home">Home</a></li>
+            <li><a href="../docs/menu.pdf" target="_blank">Our Menu</a></li>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../feedback.html">Feedback</a></li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+
+    <div id="product">
+        <a href="../index.html#menu" class="back-link">&larr; Back to Menu</a>
+
+        <div class="product-left">
+            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=600&h=400&fit=crop" alt="Sandwich">
+            <span class="category">Quick Bites</span>
+            <h2>Veg Sandwich</h2>
+            <p>A light and tasty snack for your lecture break.</p>
+            <p>Starting at <span class="price">₹59</span></p>
+
+            <h3>Ingredients</h3>
+            <ul class="ingredient-list">
+                    <li>Bread</li>
+                    <li>Cucumber</li>
+                    <li>Tomato</li>
+                    <li>Onion</li>
+                    <li>Boiled potato</li>
+                    <li>Green chutney</li>
+                    <li>Butter</li>
+            </ul>
+        </div>
+
+        <div class="product-right">
+            <h3>Customize Your Veg Sandwich</h3>
+            <form action="../feedback.html" method="get">
+                <input type="hidden" name="item" value="Veg Sandwich">
+
+                <div class="option-group">
+                    <p class="group-title">Bread</p>
+                    <label><input type="radio" name="bread" value="White Bread" checked> White Bread</label>
+                    <label><input type="radio" name="bread" value="Brown Bread"> Brown Bread</label>
+                    <label><input type="radio" name="bread" value="Multigrain (+₹5)"> Multigrain (+₹5)</label>
+                </div>
+
+                <div class="option-group">
+                    <p class="group-title">Style</p>
+                    <label><input type="radio" name="style" value="Plain" checked> Plain</label>
+                    <label><input type="radio" name="style" value="Grilled (+₹10)"> Grilled (+₹10)</label>
+                </div>
+
+                <div class="option-group">
+                    <p class="group-title">Add Extras</p>
+                    <label><input type="checkbox" name="extras" value="Extra Cheese (+₹15)"> Extra Cheese (+₹15)</label>
+                    <label><input type="checkbox" name="extras" value="Sweet Corn (+₹10)"> Sweet Corn (+₹10)</label>
+                    <label><input type="checkbox" name="extras" value="Mayonnaise (+₹5)"> Mayonnaise (+₹5)</label>
+                </div>
+
+                <div class="option-group">
+                    <p class="group-title">Leave Out</p>
+                    <label><input type="checkbox" name="remove" value="No Onion"> No Onion</label>
+                    <label><input type="checkbox" name="remove" value="No Tomato"> No Tomato</label>
+                    <label><input type="checkbox" name="remove" value="No Cucumber"> No Cucumber</label>
+                    <label><input type="checkbox" name="remove" value="No Butter"> No Butter</label>
+                </div>
+
+                <div class="option-group">
+                    <p class="group-title"><label for="qty">Quantity</label></p>
+                    <select id="qty" name="quantity" class="text-box">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+
+                <div class="option-group">
+                    <p class="group-title"><label for="notes">Special Instructions</label></p>
+                    <textarea id="notes" name="notes" rows="3" cols="40" class="text-box wide"></textarea>
+                </div>
+
+                <input type="submit" value="Order Now" class="submit-btn">
+                <input type="reset" value="Reset" class="reset-btn">
+            </form>
+        </div>
+
+        <div class="clear"></div>
+    </div>
+
+    <div id="footer">
+        <h2>Campus<span>Bites.</span></h2>
+        <p>Made with love for college foodies &hearts;</p>
+    </div>
+
+</body>
+</html>
